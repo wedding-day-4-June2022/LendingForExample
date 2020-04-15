@@ -212,12 +212,14 @@ header {
   justify-content: space-between;
   margin-bottom: 60px;
 }
-.services__title-box {
+.services__title-box,
+.form__title-box {
   max-width: 520px;
   padding-left: 140px;
   position: relative;
 }
-.services__title-box::before {
+.services__title-box::before,
+.form__title-box::before {
   content: "";
   position: absolute;
   width: 100px;
@@ -226,7 +228,8 @@ header {
   left: 0;
   top: 11px;
 }
-.services-title {
+.services__title,
+.form__title {
   font-size: 24px;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
@@ -234,7 +237,8 @@ header {
   color: #212020;
   margin-bottom: 10px;
 }
-.services__text {
+.services__text,
+.form__text {
   letter-spacing: 0.1px;
 }
 .services__btn a {
@@ -288,9 +292,118 @@ header {
   margin-right: 60px;
 }
 
-
-
 /* Third display */
+
+.about {
+  background-image: url(../img/about-fon.jpg);
+  background-size: cover;
+  background-position: center;
+  min-height: 300px;
+  background-repeat: no-repeat;
+  padding: 25px 0px 45px;
+}
+.about__inner {
+  max-width: 545px;
+}
+.about__title {
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  padding: 10px 0px 25px;
+  line-height: 24px;
+  color: white;
+  font-weight: 500px;
+}
+.about__text {
+  margin-bottom: 30px;
+  letter-spacing: 0.1px;
+  line-height: 24px;
+  color: #d3d2d2;
+}
+.about-btn.default-btn::after {
+  color: #000;
+}
+
+/* fore display */
+
+.form {
+  padding-top: 30px;
+}
+.form__inner {
+  padding-bottom: 40px;
+  background-image: url(../img/form-fon.png);
+  background-repeat: no-repeat;
+  min-height: 460px;
+  background-position: bottom right;
+}
+.form__box {
+  max-width: 850px;
+  padding-top: 45px;
+}
+.form__box-inner {
+  display: flex;
+  justify-content: space-between;
+}
+.form__box-left {
+  max-width: 260px;
+  width: 100%;
+}
+.form__box-right {
+  max-width: 555px;
+  width: 100%;
+}
+.form__box-inner label,
+.form__box-inner input,
+.form__box-inner textarea {
+  display: block;
+  width: 100%;
+}
+.form__box-inner label {
+  line-height: 36px;
+  color: #282828;
+  font-family: "Roboto", sans-serif;
+}
+.form__box-inner input {
+  margin-bottom: 8px;
+  outline: none;
+  height: 40px;
+  border: 1px solid #e6e6e6;
+  padding: 0px 10px;
+}
+.form__box-inner select {
+  outline: none;
+  height: 40px;
+  border: 1px solid #e6e6e6;
+  padding-left: 17px;
+}
+.form__box-inner div.jq-selectbox.jqselect{
+  display: block;
+  width: 100%:
+}
+.form__box-inner textarea{
+  border: 1px solid #e6e6e6;
+  outline: none;
+  padding: 10px;
+  height: 196px;
+  height: 208px;
+  resize: none;
+  margin-bottom: 40px;
+}
+.form__box-inner button{
+  background-color: transparent;
+  color: #282828;
+  float: right;
+}
+.form__box-inner button:hover{
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
 
 
 
