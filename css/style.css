@@ -207,19 +207,22 @@ header {
 .services {
   padding: 50px 0px 30px;
 }
-.services__top {
+.services__top,
+.news__top {
   display: flex;
   justify-content: space-between;
   margin-bottom: 60px;
 }
 .services__title-box,
-.form__title-box {
+.form__title-box,
+.news__title-box {
   max-width: 520px;
   padding-left: 140px;
   position: relative;
 }
 .services__title-box::before,
-.form__title-box::before {
+.form__title-box::before,
+.news__title-box::before {
   content: "";
   position: absolute;
   width: 100px;
@@ -229,7 +232,8 @@ header {
   top: 11px;
 }
 .services__title,
-.form__title {
+.form__title,
+.news__title {
   font-size: 24px;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
@@ -238,10 +242,12 @@ header {
   margin-bottom: 10px;
 }
 .services__text,
-.form__text {
+.form__text,
+.news__text {
   letter-spacing: 0.1px;
 }
-.services__btn a {
+.services__btn a,
+.news__btn a {
   color: #373636;
   line-height: 24px;
   letter-spacing: 0.4px;
@@ -406,10 +412,10 @@ header {
 .form__box-inner .jq-selectbox li {
   min-height: 18px;
   padding: 5px 17px 6px;
-  color: #231F20;
+  color: #231f20;
 }
-.form__box-inner .jq-selectbox li.selected{
-  background-color: #A3ABB1;
+.form__box-inner .jq-selectbox li.selected {
+  background-color: #a3abb1;
   color: #fff;
 }
 .form__box-inner select {
@@ -436,11 +442,9 @@ header {
   cursor: pointer;
 }
 
-/* fore display */
+/* fourth display */
 
-
-
-.advantages{
+.advantages {
   background-image: url(../img/adv-fon.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -448,17 +452,17 @@ header {
   background-size: cover;
   padding: 55px 0px 40px;
 }
-.advantages__inner{
+.advantages__inner {
   color: #fff;
   display: flex;
   justify-content: space-between;
   text-align: center;
 }
-.advantages-item{
+.advantages-item {
   max-width: 360px;
   padding: 0px 20px;
 }
-.advantages__title{
+.advantages__title {
   line-height: 24px;
   font-size: 18px;
   font-weight: 500px;
@@ -466,12 +470,12 @@ header {
   padding: 60px 0px 15px;
   position: relative;
 }
-.advantages__text{
+.advantages__text {
   line-height: 24px;
   letter-spacing: 0.1px;
   color: #d3d3d3;
 }
-.advantages__title::before{
+.advantages__title::before {
   content: "";
   position: absolute;
   width: 40px;
@@ -481,9 +485,9 @@ header {
   left: 50%;
   transform: translateX(-50%);
 }
-.advantages__title::after{
+.advantages__title::after {
   content: "\f00c";
-  font-family: 'icomoon';
+  font-family: "icomoon";
   font-size: 14px;
   position: absolute;
   top: 9px;
@@ -491,22 +495,205 @@ header {
   transform: translateX(-50%);
 }
 
+/* fifth display */
 
+.news {
+  padding: 50px 0px 110px;
+  background-color: #f9f9f9;
+}
+.news__inner {
+  display: flex;
+  justify-content: space-between;
+}
+.news__slider {
+  max-width: 555px;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0px 5px 15.36px 0.64px rgba(128, 127, 127, 0.13);
+  padding: 60px 35px 45px 70px;
+  position: relative;
+}
+.news__slider::before {
+  content: "\f10e";
+  font-family: "icomoon";
+  color: #fff;
+  font-size: 16px;
+  width: 65px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  background-color: #ffc222;
+  position: absolute;
+  top: 0;
+  left: 75px;
+}
+.news__blog {
+  max-width: 260px;
+  width: 100%;
+}
+.news__images {
+  position: relative;
+}
+.news__date {
+  position: absolute;
+  background-color: #ffc222;
+  height: 55px;
+  width: 50px;
+  color: #fff;
+  text-align: center;
+  padding-top: 30px;
+  font-weight: 700;
+  top: 0;
+  left: 10px;
+}
+.news__blog-title {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  color: #242424;
+  padding: 12px 0px;
+}
+.news__blog-text {
+  letter-spacing: 0.1px;
+  color: #5e5e5e;
+}
+.news__slider-title {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  color: #242424;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  margin-bottom: 15px;
+}
+.news__slider-text {
+  margin-bottom: 30px;
+}
+.news__slider-author {
+  color: #212020;
+  letter-spacing: 0.1px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500px;
+}
+.news__slider-inner .slick-btn {
+  top: auto;
+  bottom: -130px;
+}
+.news__slider-inner .slick-next {
+  right: -35px;
+}
+.news__slider-inner .slick-prev {
+  right: 20px;
+  left: auto;
+}
+.news__slider-inner .slick-disabled {
+  border-color: #dadada;
+}
+.news__slider-inner .slick-disabled::before {
+  color: #dadada;
+}
 
+/* sixth display */
 
+.footer__content {
+  background-color: #595959;
+  padding: 20px 0px 30px;
+}
+.footer__inner {
+  display: flex;
+  justify-content: space-between;
+}
+.footer__inner .header__btn {
+  float: none;
+  display: inline-block;
+}
+.footer__map {
+  padding-top: 10px;
+}
+.footer__map iframe {
+  min-width: 630px;
+  height: 250px;
+  width: 100%;
+}
+.footer__info {
+  max-width: 360px;
+}
+.footer__title {
+  font-style: 16px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  color: #fff;
+  line-height: 36px;
+  letter-spacing: 0.5px;
+}
+.footer__text {
+  color: #d3d2d2;
+  margin-bottom: 20px;
+}
+.footer__list li {
+  margin-top: 10px;
+}
+.footer__list a {
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+  font-weight: 400;
+  font-style: 16px;
+  line-height: 24px;
+  letter-spacing: 0.25px;
+  padding-left: 33px;
+  position: relative;
+}
+.footer__list a::before{
+  content: "\f003";
+  font-family: 'icomoon';
+  position: absolute;
+  left: 0;
+  color: #ffc222
+}
+.footer__list .footer__phone::before{
+  content: "\f095";
+  font-family: 'icomoon';
+  left: 3px;
+}
+.footer__list .footer__adress::before{
+  content: "\f041";
+  font-family: 'icomoon';
+  left: 3px;
+}
+.footer__list {
+  padding-top: 10px;
+}
+.footer__copy {
+  background-color: #303030;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  line-height: 22px;
+  padding: 8px 0px;
+  font-weight: 400;
+}
 
+/* modal */
 
+#modal{
+  width: 300px;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+#modal input{
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+  height: 40px;
+  outline: none;
+  height: 40px;
+  border: 1px solid #e6e6e6;
+  padding: 0px 10px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+#modal input[type="submit"]{
+  background-color: #ffc222;
+  border: none;
+  cursor: pointer;
+}
