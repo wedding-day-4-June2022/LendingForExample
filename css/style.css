@@ -610,11 +610,12 @@ header {
 }
 .footer__map {
   padding-top: 10px;
+  max-width: 630px;
+  width: 100%;
 }
 .footer__map iframe {
-  min-width: 630px;
-  height: 250px;
   width: 100%;
+  height: 270px;
 }
 .footer__info {
   max-width: 360px;
@@ -679,7 +680,6 @@ header {
 #modal{
   width: 300px;
 }
-
 #modal input{
   display: block;
   width: 100%;
@@ -695,5 +695,12 @@ header {
 #modal input[type="submit"]{
   background-color: #ffc222;
   border: none;
+  cursor: pointer;
+}
+
+/* ////// */
+.header__btn-menu{
+  display: none;
+  font-size: 28px;
   cursor: pointer;
 }
